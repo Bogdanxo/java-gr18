@@ -28,6 +28,7 @@ public class Main {
             }
         }
             System.out.println("Nr vocale din string e: " + nrVocale);
+            System.out.println("Nr vocale din string nu e: " + nrVocale);
     }
 
     private static void inversareNumar(int numar) {
