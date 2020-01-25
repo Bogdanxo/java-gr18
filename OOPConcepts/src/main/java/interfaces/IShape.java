@@ -1,4 +1,7 @@
 package interfaces;
 
-public interface SHape {
+public interface IShape {
+    void draw ();
+    double displayArea();
+
 }

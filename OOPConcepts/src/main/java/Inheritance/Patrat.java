@@ -1,4 +1,5 @@
 package Inheritance;
 
-public class Patrat {
+public class Patrat extends Shape{
+
 }
