@@ -24,3 +24,4 @@
 hs_err_pid*
 *.xml
 *.idea
+Tema2/target/classes/META-INF/library.kotlin_module
