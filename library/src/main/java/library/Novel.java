@@ -1,6 +1,12 @@
-package Library;
+package library;
 
-public class Novels extends Book {
+public class Novel extends Book {
+    private NovelType type = NovelType.NOVEL_TYPE_MISTERY;
+
+    public Novel(NovelType novelType, String nume, int numarPagini) {
+        super(nume, numarPagini);
+        this.type = novelType;
+    }
 
     public enum NovelType {
         NOVEL_TYPE_MISTERY,
@@ -8,10 +14,14 @@ public class Novels extends Book {
         NOVEL_TYPE_LOVE
     }
 
-    private NovelType type = NovelType.NOVEL_TYPE_MISTERY;
-
     public NovelType getType() {
         return type;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Novel" +
+                "type = " + type;
     }
 }
 
